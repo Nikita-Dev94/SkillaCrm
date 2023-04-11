@@ -1,0 +1,11 @@
+.app {
+  display: grid;
+  grid-template-columns: 240px calc(100% - 240px);
+  grid-template-rows: 64px calc(100% - 64px);
+}
+.content {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  background-color:  #F1F4F9;
+  padding: 20px 120px;
+}
