@@ -4,12 +4,13 @@ import { getCalls } from '../../api';
 import { useDispatch } from 'react-redux';
 import { setCalls } from '../../redux/callsSlice';
 import Balance from './Balance/Balance';
+import CallsTable from './CallsTable/CallsTable';
 
 
 
 const Calls = () => {
     const dispatch = useDispatch();
-    let dateStart = '2023-04-10',
+    let dateStart = '2023-04-09',
     dateEnd = '2023-04-11',
     inOut = '';
     useEffect(()=> {
@@ -29,7 +30,9 @@ const Calls = () => {
                     <div className={s.filters}>
                         фильтры
                     </div>
+                    
                 </div>
+                <CallsTable/>
             </div>
      
     )

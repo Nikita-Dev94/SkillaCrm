@@ -14,7 +14,7 @@ const Header = () => {
         const formatDate = new Intl.DateTimeFormat('ru-RU', options).format(messyDate)
     const clearDate = formatDate.slice(0,1).toUpperCase() + formatDate.slice(1, formatDate.length -1)
     dispatch(setDate(clearDate))
-    },[date])
+    },[])
    
     
     return (
